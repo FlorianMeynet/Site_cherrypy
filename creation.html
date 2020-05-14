@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="file:///C:/Users/meyne/Desktop/Site_python/cherrypy/css/normalize.css">
+	<link rel="stylesheet" href="file:///C:/Users/meyne/Desktop/Site_python/cherrypy/css/main.css">
+
+	<title>Creation de compte</title>
+</head>
+<body style="background-color: cadetbue; font-family:Roboto" bgcolor="white">
+<h2 align="center";>Veuillez vous créer un compte </h2>
+<form action="retour_apres_creation" method="POST">
+    <div align="center" > 
+        Nom
+        <div>
+            <input name="nom" type="text" size="20"/>
+        </div>
+
+        Prenom
+        <div>
+        <input name="prenom" type="text" size="20"  />
+        </div>
+
+        Numero de rue
+        <div>
+            <input name="numero" type="text" size="20" />
+        </div>
+
+        Adresse
+        <div>
+            <input name="adresse" type="text" size="20" />
+        </div>
+
+        Code Postal
+        <div>
+            <input name="codepostal" type="text" size="20" />
+        </div>
+
+        Vile
+        <div>
+            <input name="ville" type="text" size="20" />
+        </div>
+    </div>
+
+    <div  align="center">
+        Adresse mail
+        <div>
+            <input name="mail" type="text" size="20"/>
+        </div>
+        Telephone
+        <div>
+            <input name="tel" type="text" size="20"/>
+    </div>
+
+    <div>
+        <select name="genre">
+            <option value="H">Homme</option>
+            <option value="F">Femme</option> 
+        </select>
+    </div>
+
+    <div align="center">
+        Identifiant
+        <div>
+            <input name="identifiant" type="text" size="15" wrap="hard" align="center" />
+        </div>
+
+        Mot de passe
+        <div>
+        <input name="mdp" type="password" size="15" maxlength="5" />
+        </div>
+    </div>
+    <hr/>
+    <div  align="center">
+        <input type="submit" value="Inscription"></input>
+    </div>
+</form>
+</body>
+</html>

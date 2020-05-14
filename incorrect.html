@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="URF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>acceuil</title>
+</head>
+<body style="background-color: cadetbue; font-family:Roboto" bgcolor="white">
+<h1>Acceuil </h1>
+<hr/><br /><br />
+
+<h2 align="center";>Veuillez vous connecter </h2>
+<form action="connexion" method="POST">
+	<div align="center">
+		Pseudo
+		<div>
+			<input name="pseudo" type="text" size="15" wrap="hard" align="center" />
+		</div>
+		Mot de passe
+		<div>
+			<input name="mdp" type="password" size="15" maxlength="5" />
+		</div>
+	</div>
+	<hr/>
+	<div align="center">
+		<p name="incorrect" >Identifiant ou mot de passe incorect</p>
+	</div>
+	<div align="center">
+		<input type="submit" value="LogIn"></input>
+	</div>
+	<div align="center">
+		<a href="creation">Sign In</a>
+	</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="file:///C:/Users/meyne/Desktop/Site_python/cherrypy/css/normalize.css">
+	<link rel="stylesheet" href="file:///C:/Users/meyne/Desktop/Site_python/cherrypy/css/main.css">
+    <title>Commande</title>
+    
+</head>
+
+<form method="get" action="maping">
+    <button class="button1" name="maps">
+        Google Map
+        <style>
+            .button1 {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #4CAF50;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+              margin: 1em;
+            }
+            
+            .button1:hover {background-color: #3e8e41}
+            
+            .button1:active {
+              background-color: #3e8e41;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            </style>
+    </button>
+    
+</form>
+<form action="validation_commande" method="POST">
+    <div>
+        Eau minérale
+        <select name="eau">
+            <option value="0">------</option>
+            <option value="1">1 Packs</option>
+            <option value="2">2 Packs</option> 
+            <option value="3">3 Packs</option> 
+        </select>        
+    </div>
+
+    <div>
+        Pâte
+        <select name="pate">
+            <option value="0">------</option>
+            <option value="1">1 Kg</option>
+            <option value="2">2 Kg</option> 
+            <option value="3">3 Kg</option> 
+        </select>        
+    </div>
+
+    <div>
+        Riz
+        <select name="riz">
+            <option value="0">------</option>
+            <option value="1">1 Kg</option>
+            <option value="2">2 Kg</option> 
+            <option value="3">3 Kg</option> 
+        </select>        
+    </div>
+
+    <div>
+        Fruit
+        <select name="fruit">
+            <option value="0">------</option>
+            <option value="1">1 Kg</option>
+            <option value="2">2 Kg</option> 
+            <option value="3">3 Kg</option> 
+        </select>   
+    </div>
+
+    <div>
+        Conserve de légumes
+        <select name="conserve_fruit">
+            <option value="0">------</option>
+            <option value="1">1 Conserve</option>
+            <option value="2">2 Converses</option> 
+            <option value="3">3 Conserves</option> 
+        </select>         
+    </div>
+
+    <div>
+        Conserve de viande
+        <select name="conserve_viande">
+            <option value="0">------</option>
+            <option value="1">1 Conserve</option>
+            <option value="2">2 Converses</option> 
+            <option value="3">3 Conserves</option> 
+        </select>        
+    </div>
+
+    <div>
+        Conserve de poisson
+        <select name="conserve_poisson">
+            <option value="0">------</option>
+            <option value="1">1 Conserve</option>
+            <option value="2">2 Converses</option> 
+            <option value="3">3 Conserves</option> 
+        </select> 
+    </div>
+
+    <div>
+        Pain de mie
+        <select name="pain">
+            <option value="0">------</option>
+            <option value="1">1 sachet</option>
+            <option value="2">2 sachets</option> 
+            <option value="3">3 sachets</option> 
+        </select>        
+    </div>
+
+    <div>
+        Farine
+        <select name="farine">
+            <option value="0">------</option>
+            <option value="1">1 Kg</option>
+            <option value="2">2 Kg</option> 
+            <option value="3">3 Kg</option> 
+        </select>         </div>
+
+    <div>
+        Oeufs
+        <select name="oeuf">
+            <option value="0">------</option>
+            <option value="1">1 Boite</option>
+            <option value="2">2 Boites</option> 
+            <option value="3">3 Boites</option> 
+        </select>        
+    </div>
+
+    <div>
+        Lait
+        <select name="lait">
+            <option value="0">------</option>
+            <option value="1">1 Pack</option>
+            <option value="2">2 Packs</option> 
+            <option value="3">3 Packs</option> 
+        </select>          
+    </div>
+
+    <div>
+        Huile
+        <select name="huile">
+            <option value="0">------</option>
+            <option value="1">1 L</option>
+            <option value="2">2 L</option> 
+            <option value="3">3 L</option> 
+        </select>         
+    </div>
+
+    <div>
+        Sucre
+        <select name="sucre">
+            <option value="0">------</option>
+            <option value="1">1 Kg</option>
+            <option value="2">2 Kg</option> 
+            <option value="3">3 Kg</option> 
+        </select>        
+    </div>
+
+    <div>
+        Céréales
+        <select name="cereale">
+            <option value="0">------</option>
+            <option value="1">1 Kg</option>
+            <option value="2">2 Kg</option> 
+            <option value="3">3 Kg</option> 
+        </select>        
+    </div>
+
+    <div>
+        Savon
+        <select name="savon">
+            <option value="0">------</option>
+            <option value="1">1 Paquet</option>
+            <option value="2">2 Paquets</option> 
+            <option value="3">3 Paquets</option> 
+        </select>        
+    </div>
+
+    <div>
+        Dentifrice
+        <select name="dentifrice">
+            <option value="0">------</option>
+            <option value="1">1 Paquet</option>
+            <option value="2">2 Paquets</option> 
+            <option value="3">3 Paquets</option> 
+        </select>         
+    </div>
+
+    <div>
+        Masque
+        <select name="masque">
+            <option value="0">------</option>
+            <option value="1">1 Pack</option>
+            <option value="2">2 Packs</option> 
+            <option value="3">3 Packs</option> 
+        </select>         
+    </div>
+
+    <div>
+        Papier toilette
+        <select name="papier_toilette">
+            <option value="0">------</option>
+            <option value="1">1 Paquet</option>
+            <option value="2">2 Paquets</option> 
+            <option value="3">3 Paquets</option> 
+        </select>        
+    </div>
+
+    <div>
+        Sac poubelle
+        <select name="sac_poubelle">
+            <option value="0">------</option>
+            <option value="1">1 Paquet</option>
+            <option value="2">2 Paquets</option> 
+            <option value="3">3 Paquets</option> 
+        </select>        
+    </div>
+
+    <div>
+        Lingette
+        <select name="lingette">
+            <option value="0">------</option>
+            <option value="1">1 Paquet</option>
+            <option value="2">2 Paquets</option> 
+            <option value="3">3 Paquets</option> 
+        </select>         
+    </div>
+
+    <div align="center">
+        <input name="v_commande" type="submit" value="Valider la commande"></input>
+    </div>
+</form>
+
+
+</body>
+</html>
